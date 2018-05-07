@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Accion para abrir la lista de tareas -->
+    <act_window id="action_todo_task"
+                name="Tareas"
+                res_model="todo.task"
+                view_mode="tree,form"
+                />
+
+    <!-- Elemento del Menu para abrir la lista de tareas -->
+    <menuitem id="menu_todo_task"
+              name="Tareas"
+              action="action_todo_task" />
+
+</odoo>

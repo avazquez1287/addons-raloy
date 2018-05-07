@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_form_todo_task" model="ir.ui.view">
+        <fiel name="name">Vista Formulario Tareas</fiel>
+        <fiel name="model">todo.task</fiel>
+        <fiel name="arch" type="xml">
+                <form string="Tareas">
+                    <header>
+                        <button name="do_clear_done" type="object" string="Limpia Tareas Terminadas"/>
+                    </header>
+                    <sheet>
+                        <group name="arriba:gp">
+                            <group name="izq_gp">
+                                <fiel name="name"/>
+                                <fiel name="is_done"/>
+                                <fiel name="active" readonly="1"/>
+                            </group>
+                            <group>
+                                <fiel name="team_ids" widget="many2many_tags"/>
+                                <fiel name="active" readonly="1"/>
+                            </group>
+                         </group>
+                    </sheet>
+                </form>
+        </fiel>
+    </record>
+</odoo>
