@@ -1,41 +1,44 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+
 <odoo>
-    <!--- Filtro -->
+    <!--Filtro-->
     <record id="view_filter_todo_task" model="ir.ui.view">
         <field name="name">Vista Filtro o Busqueda de Tareas</field>
         <field name="model">todo.task</field>
         <field name="arch" type="xml">
-            <serch>
+            <search>
                 <field name="user_id"/>
-                <filter string="Pendientes" domaind="[('is_done','=',False)]"/>
-                <filter string="Terminados" domaind="[('is_done','!=','False')]"/>
-            </serch>
+                <filter string="Pendientes"
+                       domain="[('is_done','=', False)]" />
+                <filter string="Terminados"
+                       domain="[('is_done','!=', False)]" />
+            </search>
         </field>
     </record>
-    <!--- Vista Formulario -->
+    <!--Vista Formulario-->
     <record id="view_form_todo_task" model="ir.ui.view">
         <field name="name">Vista Formulario Tareas</field>
         <field name="model">todo.task</field>
         <field name="arch" type="xml">
-                <form string="Tareas">
-                    <header>
-                        <!--- Botones -->
-                        <button name="do_clear_done" type="object" string="Limpia Tareas Terminadas"/>
-                    </header>
-                    <sheet>
-                        <group name="top">
-                            <group name="left">
-                                <field name="name"/>
-                                <field name="is_done"/>
-                                <field name="active" readonly="1"/>
-                            </group>
-                            <group>
-                                <field name="team_ids" widget="many2many_tags"/>
-                                <field name="active" readonly="1"/>
-                            </group>
+            <form string="Tareas">
+                <header>
+                    <!-- botones -->
+                    <button name="do_clear_done" type="object" string="Limpiar Terminadas" />
+                </header>
+                <sheet>
+                    <group name="top">
+                        <group name="left">
+                            <field name="name"/>
+                            <field name="user_id"/>
+                            <field name="is_done" />
                         </group>
-                    </sheet>
-                </form>
+                        <group>
+                            <field name="team_ids" widget="many2many_tags"/>
+                            <field name="active" readonly="1"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
         </field>
     </record>
 </odoo>
