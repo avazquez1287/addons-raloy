@@ -7,10 +7,8 @@
         <field name="arch" type="xml">
             <serch>
                 <field name="user_id"/>
-                <filter string="Pendientes"
-                        domaind="[('is_done','=',False)]"/>
-                <filter string="Terminados"
-                        domaind="[('is_done','!=','False')]"/>
+                <filter string="Pendientes" domaind="[('is_done','=',False)]"/>
+                <filter string="Terminados" domaind="[('is_done','!=','False')]"/>
             </serch>
         </field>
     </record>
@@ -38,6 +36,6 @@
                          </group>
                     </sheet>
                 </form>
-        </field>
+         </field>
     </record>
 </odoo>
