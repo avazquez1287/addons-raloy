@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_form_partner_todo_task" model="ir.ui.view">
+        <field name="name">Vista Formulario Todo Task e Res Partner</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <field name="lang" position="after">
+                <field name="todo_ids"/>
+            </field>
+        </field>
+    </record>
+</odoo>
