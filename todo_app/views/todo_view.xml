@@ -2,40 +2,40 @@
 <odoo>
     <!--- Filtro -->
     <record id="view_filter_todo_task" model="ir.ui.view">
-        <fiel name="name">Vista Filtro o Busqueda de Tareas</fiel>
-        <fiel name="model">todo.task</fiel>
-        <fiel name="arch" type="xml">
+        <field name="name">Vista Filtro o Busqueda de Tareas</field>
+        <field name="model">todo.task</field>
+        <field name="arch" type="xml">
             <serch>
-                <fiel name="user_id"/>
+                <field name="user_id"/>
                 <filter string="Pendientes" domaind="[('is_done','=',False)]"/>
                 <filter string="Terminados" domaind="[('is_done','!=','False')]"/>
             </serch>
-        </fiel>
+        </field>
     </record>
     <!--- Vista Formulario -->
     <record id="view_form_todo_task" model="ir.ui.view">
-        <fiel name="name">Vista Formulario Tareas</fiel>
-        <fiel name="model">todo.task</fiel>
-        <fiel name="arch" type="xml">
+        <field name="name">Vista Formulario Tareas</field>
+        <field name="model">todo.task</field>
+        <field name="arch" type="xml">
                 <form string="Tareas">
                     <header>
                         <!--- Botones -->
-                        <butoon name="do_clear_done" type="object" string="Limpia Tareas Terminadas"/>
+                        <button name="do_clear_done" type="object" string="Limpia Tareas Terminadas"/>
                     </header>
                     <sheet>
                         <group name="top">
                             <group name="left">
-                                <fiel name="name"/>
-                                <fiel name="is_done"/>
-                                <fiel name="active" readonly="1"/>
+                                <field name="name"/>
+                                <field name="is_done"/>
+                                <field name="active" readonly="1"/>
                             </group>
                             <group>
-                                <fiel name="team_ids" widget="many2many_tags"/>
-                                <fiel name="active" readonly="1"/>
+                                <field name="team_ids" widget="many2many_tags"/>
+                                <field name="active" readonly="1"/>
                             </group>
                         </group>
                     </sheet>
                 </form>
-        </fiel>
+        </field>
     </record>
 </odoo>
