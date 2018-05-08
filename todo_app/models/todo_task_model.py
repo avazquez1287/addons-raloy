@@ -26,4 +26,4 @@ class TodoTask(models.Model):
          if 'active' not in values:
              values ['active'] = True
 
-         super(TodoTask, self).write(values)
+         super().write(values)
