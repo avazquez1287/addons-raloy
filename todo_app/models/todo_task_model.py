@@ -11,4 +11,5 @@ class TodoTask(models.Model):
     active = fields.Boolean('Activa ?', default=True)
     user_id = fields.Many2one('res.users', string='Responsable', default=lambda self: self.env.user)
     team_ids = fields.Many2many('res.partner', string='Equipo')
+    date_deadline = fields.Date('Fecha Limite', required=True)
 
