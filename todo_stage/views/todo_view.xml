@@ -20,6 +20,7 @@
             <xpath expr="//button[@name='do_clear_done']" position="before">
                 <button name="do_toggle_done" type="object" string="Invierte valor Terminado en Tareas"/>
             </xpath> -->
+            #<!--Agrega la nesajeria al modelo -->
             <sheet position="after">
                 <div class="oe_chatter">
                     <field name="message_follower_ids" widget="mail_followers"/>
@@ -44,5 +45,14 @@
 
     </record>
 
+    <!-- Modificar el menu tareas de todo_task-->
+    <record id="todo_app.menu_todo_task" model="ir.ui.menu">
+        <field name="name">Mis Tareas</field>
+    </record>
+
+    <!-- Modificar accion del menu, le indicamos que active por defaul el filtro de mis tareas -->
+    <record id="todo_app.action_todo_task" model="ir.actions.act.window">
+        <field name="context">{'search_default_filter_filter_my_tasks': True}</field>
+    </record>
 
 </odoo>
