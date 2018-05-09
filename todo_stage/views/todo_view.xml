@@ -20,7 +20,7 @@
             <xpath expr="//button[@name='do_clear_done']" position="before">
                 <button name="do_toggle_done" type="object" string="Invierte valor Terminado en Tareas"/>
             </xpath> -->
-            #<!--Agrega la nesajeria al modelo -->
+            <!--Agrega la nesajeria al modelo -->
             <sheet position="after">
                 <div class="oe_chatter">
                     <field name="message_follower_ids" widget="mail_followers"/>
