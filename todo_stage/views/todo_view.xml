@@ -16,6 +16,16 @@
             <button name="do_clear_done" position="before">
                 <button name="do_toggle_done" type="object" string="Invierte valor Terminado en Tareas"/>
             </button>
+            <!-- esta epresion ubica por coincidencias de cadena y de una mejor manera que la de un nombre
+            <xpath expr="//button[@name='do_clear_done']" position="before">
+                <button name="do_toggle_done" type="object" string="Invierte valor Terminado en Tareas"/>
+            </xpath> -->
+            <sheet position="after">
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_id"/>
+                </div>
+            </sheet>
         </field>
     </record>
 

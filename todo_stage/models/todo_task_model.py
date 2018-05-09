@@ -5,7 +5,8 @@ from odoo.exceptions import ValidationError
 
 
 class TodoTask(models.Model):
-    _inherit = 'todo.task'
+    _name = 'todo.task' #le indica que se trabaja sobre el mismo modelo
+    _inherit = ['todo.task', 'mail.thread'] #Es un modelo de tipo abstracto, es deci no existe pero se usa como herencias para otros
 
     effort_estimate = fields.Integer()
     name = fields.Char(help=u'¿Qué es lo que se tiene que hacer?')

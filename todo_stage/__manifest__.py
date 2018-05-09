@@ -2,7 +2,7 @@
 {
     'name': 'Agregar Etapas y Etiquetas a las tareas',
     'description': 'Organiza tareas por etapas',
-    'depends': ['todo_app'],
+    'depends': ['todo_app', 'mail'],
     'application': True,
     'website': 'www.raloylubricantes.mx',
     'author': 'Raloy Lubricantes, SA de CV',
