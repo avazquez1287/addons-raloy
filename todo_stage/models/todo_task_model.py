@@ -24,7 +24,7 @@ class TodoTask(models.Model):
     @api.multi
     def do_clear_done(self):
         #Esta condición se evalua de der. a izq. y sobre las dos condiciones crea un and con el amperson del inicio
-        domain = ['&',('is_done', '=', True), '|' ('user_id', '=', self.env.uid), ('user_id', '=', False)]
+        domain = [('is_done', '=', True), '|', ('user_id', '=', self.env.uid), ('user_id', '=', False)]
         #Si la Tarea_terminada == True AND ( Usuario == uid OR Usuario == False)
         dones = self.search(domain)
         dones.write({'active': False})
