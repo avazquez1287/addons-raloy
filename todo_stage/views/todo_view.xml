@@ -51,7 +51,7 @@
     </record>
 
     <!-- Modificar accion del menu, le indicamos que active por defaul el filtro de mis tareas -->
-    <record id="todo_app.action_todo_task" model="ir.actions_actwindow">
+    <record id="todo_app.action_todo_task" model="ir.actions.act_window">
         <field name="context">{'search_default_filter_my_task': True}</field>
     </record>
 
