@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Plantilla en formato QWeb -->
+
+    <template id="index_template" name="Mi Lista de Tareas">
+        <div id="wrap" class="container">
+            <h1>Tareas por Hacer</h1>
+            <!-- Lista de tareas -->
+            <t t-foreach="tasks" t-as="task">
+                <div class="row">
+                    <span t-field="task.name"/>
+                </div>
+            </t>
+        </div>
+    </template>
+
+</odoo>

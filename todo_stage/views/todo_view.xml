@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Heredar vista de todo.task Form-->
+    <record id="view_todo_task_inh" model="ir.ui.view">
+        <field name="name">Vista heredada de Tareas</field>
+        <field name="model">todo.task</field>
+        <field name="inherit_id" ref="todo_app.view_form_todo_task"/>
+        <field name="arch" type="xml">
+            <field name="user_id" position="after">
+                <field name="partner_id"/>
+            </field>
+            <field name="active" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </field>
+        </field>
+    </record>
+
+    <!-- Heredar vistas de filtros -->
+
+    <record id="view_filter_todo_task_inherited" model="ir.ui.view">
+        <field name="name">Vista Heredada de Busqueda</field>
+        <field name="model">todo.task</field>
+        <field name="inherit_id" ref="todo_app.view_filter_todo_task"/>
+        <field name="arch" type="xml">
+            <field name="user_id" position="after">
+                <filter name="filter_my_tasks" string="Mis Tareas" domain="[('user_id', 'in', [uid, False])]" />
+                <filter name="filter_not_assigned" string="Sin asignar" domain="[('user_id', '=', False)]" />
+            </field>
+        </field>
+
+    </record>
+
+
+</odoo>
