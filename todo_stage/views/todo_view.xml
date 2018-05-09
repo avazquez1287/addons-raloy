@@ -13,6 +13,9 @@
             <field name="active" position="attributes">
                 <attribute name="invisible">1</attribute>
             </field>
+            <button name="do_clear_done" position="before">
+                <button name="do_toggle_done" type="object" string="Invierte valor Terminado en Tareas"/>
+            </button>
         </field>
     </record>
 
