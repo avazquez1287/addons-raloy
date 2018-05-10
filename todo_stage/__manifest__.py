@@ -5,9 +5,10 @@
     'depends': ['todo_app', 'mail'],
     'application': True,
     'website': 'www.raloylubricantes.mx',
-    'author': 'Raloy Lubricantes, SA de CV',
+    'author': 'Arturo Vazquez',
 
     'data': [
         'views/todo_view.xml',
+        'views/todo_menu.xml',
     ],
 }

@@ -1,4 +1,42 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <odoo>
+
+    <!--Accion para etapas -->
+    <act_window id="action_todo_stage"
+                name="Etapas de las Tareas"
+                res_model="todo.task.stage"
+                view_mode="tree,form"
+                target="current"
+                context="{'default_state':'open'}"
+                domain="[]"
+                limit="80"
+                />
+
+
+    <menuitem id="todo_app.menu_todo_task" name="Tareas" action=""/>
+
+    <!-- Submenu -->
+    <menuitem id="menu_todo_task_view"
+              name="Mis Tareas"
+              sequence="10"
+              parent="todo_app.menu_todo_task"
+              action="todo_app.action_todo_task" />
+
+    <menuitem id="menu_todo_config"
+              name="Configuracion"
+              sequence="100"
+              parent="todo_app.menu_todo_task"
+              groups="base.group_system"/>
+
+    <menuitem id="menu_todo_task_stage"
+              name="Etapas"
+              parent="menu_todo_config"
+              action="action_todo_stage"/>
+
+    <!-- Modificar accion del menu -->
+    <record id="todo_app.action_todo_task" model="ir.actions.act_window">
+        <field name="context">{'search_default_filter_my_tasks': True}</field>
+    </record>
+
 
 </odoo>

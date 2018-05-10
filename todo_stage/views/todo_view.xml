@@ -45,14 +45,46 @@
 
     </record>
 
-    <!-- Modificar el menu tareas de todo_task-->
+    <!-- Modificar el menu tareas de todo_task
     <record id="todo_app.menu_todo_task" model="ir.ui.menu">
         <field name="name">Mis Tareas</field>
-    </record>
+    </record> -->
 
-    <!-- Modificar accion del menu, le indicamos que active por defaul el filtro de mis tareas -->
+    <!-- Modificar accion del menu, le indicamos que active por defaul el filtro de mis tareas
     <record id="todo_app.action_todo_task" model="ir.actions.act_window">
         <field name="context">{'search_default_filter_my_task': True}</field>
+    </record>-->
+
+    <!-- Vista 2 para Todo Task -->
+    <!-- prioridad por default es 16 -->
+    <record id="view_form_todo_task_2" model="ir.ui.view">
+        <field name="name">Vista 2 para Tareas</field>
+        <field name="model">todo.task</field>
+        <field name="priority">15</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <!-- botones y el widget status -->
+                    <field name="state" invisible="True"/>
+                    <button name="do_clear_done" type="object"
+                            string="Todo Terminado"
+                            attrs="{'invisible':[('state','=','draft')]}"
+                            class="oe_highlight"/>
+                    <field name="stage_id"
+                           widget="statusbar"
+                           clickable="True"
+                           options="{'fold_field': 'fold'}"/>
+                </header>
+                <sheet>
+
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+
     </record>
 
 </odoo>
