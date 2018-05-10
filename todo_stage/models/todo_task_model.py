@@ -26,6 +26,8 @@ class TodoTask(models.Model):
     # campo calculado
     user_todo_count = fields.Integer('Tareas asignada', compute='_compute_user_todo_count')
 
+    #Se indica que queremos los dos modelos en la referencia
+    refers_to = fields.Reference([('res.user', 'User'), ('res.partner', 'Partner')], 'Referncia')
 
     @api.multi
     def _compute_user_todo_count(self):
