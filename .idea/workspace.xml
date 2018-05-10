@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d1da534-4c20-48c3-82bf-3ca3ae7012f3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todo_stage/models/todo_task_model.py" afterPath="$PROJECT_DIR$/todo_stage/models/todo_task_model.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todo_stage/views/todo_view.xml" afterPath="$PROJECT_DIR$/todo_stage/views/todo_view.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
