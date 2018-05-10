@@ -113,10 +113,10 @@
                     </group>
                     <notebook>
                         <page string="Equipo" name="team_page">
-                            <field name="team_ids">
+                            <field name="team_ids"/>
                         </page>
                         <page string="Otra Informacion" name="other">
-                            <field name="tag_ids" widget="many2many_tags">
+                            <field name="tag_ids" widget="many2many_tags"/>
                         </page>
                     </notebook>
 <!--
