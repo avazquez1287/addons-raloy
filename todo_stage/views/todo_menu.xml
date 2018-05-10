@@ -36,6 +36,7 @@
     <!-- Modificar accion del menu -->
     <record id="todo_app.action_todo_task" model="ir.actions.act_window">
         <field name="context">{'search_default_filter_my_tasks': True}</field>
+        <field name="view_mode">tree_form,calendar</field>
     </record>
 
 

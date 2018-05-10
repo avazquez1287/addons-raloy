@@ -57,7 +57,7 @@
     <act_window id="action_todo_task_button"
                 name="Tareas"
                 res_model="todo.task"
-                view_mode="tree,form"
+                view_mode="tree,form, calendar"
                 domain="[('user_id', '=', default_user_id)]" />
     <!-- Vista 2 para Todo Task -->
     <!-- prioridad por default es 16 -->
@@ -157,14 +157,29 @@
         </field>
         </record>
 
+    <!-- Vista de calendarios -->
+    <record id="view_calendar_todo_task" model="ir.ui.view">
+        <field name="name">Vista de Calendario para Etapas</field>
+        <field name="model">todo.task</field>
+        <field name="priority">15</field>
+        <field name="arch" type="xml">
+            <calendar date_start="date_deadline" color="user_id">
+                <field name="name"/>
+                <field name="stage_id"/>
+            </calendar>
+        </field>
+        </record>
+
+
+
     <record id="view_tree_todo_stage" model="ir.ui.view">
         <field name="name">Vista de lista para Etapas</field>
         <field name="model">todo.task.stage</field>
         <field name="priority">15</field>
         <field name="arch" type="xml">
-                <tree delete="false">
-                    <field name="sequence" widget="handle"/>
-                    <field name="name"/>
+            <tree delete="false">
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
                     <field name="state"/>
                 </tree>
         </field>
