@@ -111,6 +111,14 @@
                             <field name="effort_estimate"/>
                         </group>
                     </group>
+                    <notebook>
+                        <page string="Equipo" name="team_page">
+                            <field name="team_ids">
+                        </page>
+                        <page string="Otra Informacion" name="other">
+                            <field name="tag_ids" widget="many2many_tags">
+                        </page>
+                    </notebook>
 <!--
                      <div class="oe_title">
                         <h3>
@@ -118,6 +126,7 @@
                              <field name="user_id" class="oe_inline"/>
                          </h3>
                      </div> -->
+
                  </sheet>
                 <div class="oe_chatter">
                     <field name="message_follower_ids" widget="mail_followers"/>
@@ -152,7 +161,7 @@
         <field name="priority">15</field>
         <field name="arch" type="xml">
                 <tree delete="false">
-                    <field name="sequence"/>
+                    <field name="sequence" widget="handle"/>
                     <field name="name"/>
                     <field name="state"/>
                 </tree>
