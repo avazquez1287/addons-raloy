@@ -24,12 +24,34 @@ class TodoTask(models.Model):
     state = fields.Selection(related='stage_id.state', string='Estatus de la Etapa')
 
     # campo calculado
-    user_todo_count = fields.Integer('Tareas asignada', compute='_compute_user_todo_count')
+    user_todo_count = fields.Integer('Tareas asignada', compute='_compute_user_todo_count', store=True)
+    stage_fold = fields.Boolean(string='Etapa Doblada', compute='_compute_stage_fold', search='search_Stage_fold',
+                                inverse='_werite_stage_fold')
+
+
+
 
     #Se indica que queremos los dos modelos en la referencia
     refers_to = fields.Reference([('res.user', 'User'), ('res.partner', 'Partner')], 'Referncia')
 
+
     @api.multi
+    @api.depends('stage_id.fold')
+    def _compute_stage_fold(self):
+        for task in self:
+            task.stage_fold = task.stage_id.fold
+
+    @api.multi
+    def _serch_satage_fold(self, operator, value):
+        return [('stage_id.fold', operator, value)]
+
+    @api.multi
+    def _write_stage_fold(self, oerator, value):
+        self.stage_id.fold = self.stage_fold
+
+
+    @api.multi
+    @api.depends('user_id')
     def _compute_user_todo_count(self):
         for task in self:
             task.user_todo_count = task.search_count([('user_id', '=', task.user_id.id)])

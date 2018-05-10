@@ -131,4 +131,21 @@
 
     </record>
 
+    <!-- vista de lista -->
+     <record id="view_tree_todo_task" model="ir.ui.view">
+        <field name="name">Vista de lista para Tareas</field>
+        <field name="model">todo.task</field>
+        <field name="priority">15</field>
+        <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="nuser_id"/>
+                    <field name="is_done"/>
+                    <field name="refers_to"/>
+                </tree>
+        </field>
+        </record>
+
+
+
 </odoo>
