@@ -41,8 +41,8 @@
       <file leaf-file-name="todo_view.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/todo_stage/views/todo_view.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="140" column="40" lean-forward="true" selection-start-line="140" selection-start-column="40" selection-end-line="140" selection-end-column="40" />
+            <state relative-caret-position="347">
+              <caret line="145" column="16" lean-forward="true" selection-start-line="145" selection-start-column="16" selection-end-line="145" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -626,8 +626,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/todo_stage/views/todo_view.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="140" column="40" lean-forward="true" selection-start-line="140" selection-start-column="40" selection-end-line="140" selection-end-column="40" />
+        <state relative-caret-position="347">
+          <caret line="145" column="16" lean-forward="true" selection-start-line="145" selection-start-column="16" selection-end-line="145" selection-end-column="16" />
           <folding />
         </state>
       </provider>

@@ -146,6 +146,19 @@
         </field>
         </record>
 
+    <record id="view_tree_todo_stage" model="ir.ui.view">
+        <field name="name">Vista de lista para Etapas</field>
+        <field name="model">todo.task.stage</field>
+        <field name="priority">15</field>
+        <field name="arch" type="xml">
+                <tree delete="false">
+                    <field name="sequence"/>
+                    <field name="name"/>
+                    <field name="state"/>
+                </tree>
+        </field>
+        </record>
+
 
 
 </odoo>
