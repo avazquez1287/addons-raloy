@@ -82,20 +82,20 @@
                 <!-- Agrega un boton con imagen de tareas a la hoja -->
                 <sheet>
                     <div name="button_box" class="oe_button_box">
-                    <button class="oe_stat_button"
-                            type="action"
-                            icon="fa-address-book"
-                            name="%(action_todo_task_button)d"
-                            context="{'default_user_id': user_id}"
-                            help="Todas las tareas asignadas a este usuario">
-                        <field name="user_todo_count" string="Tareas" widget="statinfo"/>
-                    </button>
-                </div>
+                        <button class="oe_stat_button"
+                             type="action"
+                             icon="fa-address-book"
+                             name="%(action_todo_task_button)d"
+                             context="{'default_user_id': user_id}"
+                              help="Todas las tareas asignadas a este usuario">
+                            <field name="user_todo_count" string="Tareas" widget="statinfo"/>
+                         </button>
+                    </div>
 
                     <div class="oe_title">
 
-                    <label for="name" class="oe_edit_only"/>
-                    <h1><field name="name"/></h1>
+                        <label for="name" class="oe_edit_only"/>
+                        <h1><field name="name"/></h1>
                         <h3>
                             <span class="oe_readonly"> asignada a </span>
                             <label for="user_id" class="oe_edit_only"/>
@@ -112,11 +112,12 @@
                         </group>
                     </group>
 
-                <div class="oe_title">
-                    <h3>
-                        <label for="user_id" class="oe_edit_only"/>
-                        <field name="user_id" class="oe_inline"/>
-                    </h3>
+                     <div class="oe_title">
+                        <h3>
+                             <label for="user_id" class="oe_edit_only"/>
+                             <field name="user_id" class="oe_inline"/>
+                         </h3>
+                     </div>
                  </sheet>
                 <div class="oe_chatter">
                     <field name="message_follower_ids" widget="mail_followers"/>
