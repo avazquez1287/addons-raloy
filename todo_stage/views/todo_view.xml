@@ -116,7 +116,9 @@
                             <field name="team_ids"/>
                         </page>
                         <page string="Otra Informacion" name="other">
-                            <field name="tag_ids" widget="many2many_tags"/>
+                            <group>
+                                <field name="tag_ids" widget="many2many_tags"/>
+                            </group>
                         </page>
                     </notebook>
 <!--
