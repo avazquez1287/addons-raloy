@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d1da534-4c20-48c3-82bf-3ca3ae7012f3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todo_stage/models/todo_task_model.py" afterPath="$PROJECT_DIR$/todo_stage/models/todo_task_model.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todo_stage/views/todo_menu.xml" afterPath="$PROJECT_DIR$/todo_stage/views/todo_menu.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todo_stage/views/todo_view.xml" afterPath="$PROJECT_DIR$/todo_stage/views/todo_view.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,18 +37,46 @@
     <favorites_list name="untitled" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="todo_view.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/todo_stage/views/todo_view.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
-              <caret line="216" column="0" lean-forward="true" selection-start-line="216" selection-start-column="0" selection-end-line="216" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="todo_view.xml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/todo_stage/views/todo_view.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="474">
+                  <caret line="216" column="0" lean-forward="true" selection-start-line="216" selection-start-column="0" selection-end-line="216" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="todo_task_model.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/todo_stage/models/todo_task_model.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="474">
+                  <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="todo_task_model.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/todo_stage/models/todo_task_model.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="533">
+                  <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -78,9 +103,9 @@
         <option value="$PROJECT_DIR$/todo_app/views/todo_view.xml" />
         <option value="$PROJECT_DIR$/todo_stage/models/todo_task_stage.py" />
         <option value="$PROJECT_DIR$/todo_stage/__manifest__.py" />
-        <option value="$PROJECT_DIR$/todo_stage/models/todo_task_model.py" />
         <option value="$PROJECT_DIR$/todo_stage/views/todo_menu.xml" />
         <option value="$PROJECT_DIR$/todo_stage/views/todo_view.xml" />
+        <option value="$PROJECT_DIR$/todo_stage/models/todo_task_model.py" />
       </list>
     </option>
   </component>
@@ -91,9 +116,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1917" />
-    <option name="width" value="1926" />
-    <option name="height" value="1083" />
+    <option name="x" value="2868" />
+    <option name="width" value="972" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -152,6 +177,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Curso" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="addons-raloy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="todo_stage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -411,10 +454,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1917" y="0" width="1926" height="1083" extended-state="6" />
-    <editor active="false" />
+    <frame x="2868" y="0" width="972" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26414087" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28705883" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298647" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280543" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.466457" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -422,7 +465,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36524454" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" x="3899" y="648" width="1202" height="309" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36638832" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" x="3899" y="648" width="1202" height="309" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -530,24 +573,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/todo_stage/models/todo_task_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="76" column="45" lean-forward="true" selection-start-line="76" selection-start-column="45" selection-end-line="76" selection-end-column="45" />
-          <folding>
-            <element signature="e#25#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/todo_stage/models/todo_task_stage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-244">
-          <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/todo_stage/models/todo_task_tag.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-45">
@@ -580,10 +605,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/todo_stage/models/todo_task_stage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/todo_stage/views/todo_view.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
+        <state relative-caret-position="474">
           <caret line="216" column="0" lean-forward="true" selection-start-line="216" selection-start-column="0" selection-end-line="216" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo_stage/models/todo_task_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
           <folding />
         </state>
       </provider>

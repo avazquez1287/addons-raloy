@@ -37,6 +37,17 @@ class TodoTask(models.Model):
     #Se indica que queremos los dos modelos en la referencia
     refers_to = fields.Reference([('res.user', 'User'), ('res.partner', 'Partner')], 'Referncia')
 
+    @api.multi
+    qapi.onchange()#lanzar un evento cada vez que cambie l user_id
+    def onchange_user_id:
+        if not self.user_id:
+            self.team_ids = None
+            return {
+                'warning': {
+                    'title': 'Sin usuario responsable',
+                    'message': 'Se vacacionaron los miembros del equipo'
+                }
+            }
 
     @api.multi
     @api.depends('stage_id.fold')
