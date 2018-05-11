@@ -10,6 +10,6 @@
     'data': [
         'views/todo_view.xml',
         'views/todo_menu.xml',
-        'wizard/todo_task_wizard.xml'
+        'wizard/todo_task_wizard_wiew.xml'
     ]
 }
