@@ -37,6 +37,13 @@ class TodoTask(models.Model):
     #Se indica que queremos los dos modelos en la referencia
     refers_to = fields.Reference([('res.user', 'User'), ('res.partner', 'Partner')], 'Referncia')
 
+    @api.model
+    def creat(self,vals):
+        values.update({'effort_estimate':5})
+        new_record = super(TodoTask, self).creat(values) #Para modulos en odoo 10
+        return new_record
+
+
     @api.multi
     @api.onchange('user_id')#lanzar un evento cada vez que cambie l user_id
     def onchange_user_id(self):
