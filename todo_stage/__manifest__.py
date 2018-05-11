@@ -10,5 +10,6 @@
     'data': [
         'views/todo_view.xml',
         'views/todo_menu.xml',
-    ],
+        'wizard/todo_task_wizard.xml'
+    ]
 }
