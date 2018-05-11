@@ -9,10 +9,10 @@ _logger = logging.getLogger(__name__)
 
 class TodoTaskWizard(models.TransientModel):
     _name = 'todo.task.wizard'
-    _decription = 'Asignacion masiva de Tareas'
+    _description = 'Asignacion masiva de Tareas'
 
     task_ids = fields.Many2many('todo.task', string='Tareas')  #Indispensable usar Many2many
-    new_deadline = _fields.Date('Nueva Fecha Limite')
+    new_deadline = fields.Date('Nueva Fecha Limite')
     new_user_id = fields.Many2many('res.user', string='Nuevo responsable')
 
     @api.multi
