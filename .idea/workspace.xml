@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9d1da534-4c20-48c3-82bf-3ca3ae7012f3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todo_stage/wizard/__init__.py" afterPath="$PROJECT_DIR$/todo_stage/wizard/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todo_stage/wizard/todo_task_wizard.py" afterPath="$PROJECT_DIR$/todo_stage/wizard/todo_task_wizard.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -75,17 +74,17 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="__init__.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/todo_stage/wizard/__init__.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="45">
-                  <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+                <state relative-caret-position="15">
+                  <caret line="1" column="30" lean-forward="false" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="todo_task_wizard.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="todo_task_wizard.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/todo_stage/wizard/todo_task_wizard.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="60">
@@ -143,8 +142,8 @@
         <option value="$PROJECT_DIR$/todo_stage/wizard/todo_task_wizard_wiew.xml" />
         <option value="$PROJECT_DIR$/todo_stage/__init__.py" />
         <option value="$PROJECT_DIR$/todo_stage/__manifest__.py" />
-        <option value="$PROJECT_DIR$/todo_stage/wizard/__init__.py" />
         <option value="$PROJECT_DIR$/todo_stage/wizard/todo_task_wizard.py" />
+        <option value="$PROJECT_DIR$/todo_stage/wizard/__init__.py" />
       </list>
     </option>
   </component>
@@ -698,14 +697,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/todo_stage/wizard/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/todo_stage/wizard/todo_task_wizard.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -713,6 +704,14 @@
           <folding>
             <element signature="e#25#61#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo_stage/wizard/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="30" lean-forward="false" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
