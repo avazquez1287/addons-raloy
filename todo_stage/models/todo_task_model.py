@@ -53,6 +53,7 @@ class TodoTask(models.Model):
                 raise ValidationError('Minimo 5 y maximo 50 caracteres')
 
 
+
     @api.model #cuando se utiliza la api model no recibe un recordset
     def creat(self,vals):
         values.update({'effort_estimate':5})
