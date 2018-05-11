@@ -38,8 +38,8 @@ class TodoTask(models.Model):
     refers_to = fields.Reference([('res.user', 'User'), ('res.partner', 'Partner')], 'Referncia')
 
     @api.multi
-    qapi.onchange()#lanzar un evento cada vez que cambie l user_id
-    def onchange_user_id:
+    @api.onchange('user_id')#lanzar un evento cada vez que cambie l user_id
+    def onchange_user_id(self):
         if not self.user_id:
             self.team_ids = None
             return {
