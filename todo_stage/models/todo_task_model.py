@@ -25,8 +25,11 @@ class TodoTask(models.Model):
 
     # campo calculado
     user_todo_count = fields.Integer('Tareas asignada', compute='_compute_user_todo_count', store=True)
-    stage_fold = fields.Boolean(string='Etapa Doblada', compute='_compute_stage_fold', search='search_Stage_fold',
-                                inverse='_werite_stage_fold')
+    stage_fold = fields.Boolean(string='Etapa Doblada',
+                                compute='_compute_stage_fold',
+                                search='search_Stage_fold',
+                                inverse='_werite_stage_fold'
+                                )
 
 
 
@@ -46,7 +49,7 @@ class TodoTask(models.Model):
         return [('stage_id.fold', operator, value)]
 
     @api.multi
-    def _write_stage_fold(self, oerator, value):
+    def _write_stage_fold(self, operator, value):
         self.stage_id.fold = self.stage_fold
 
 
