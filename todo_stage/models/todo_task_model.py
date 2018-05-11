@@ -14,6 +14,7 @@ class TodoTask(models.Model):
     _sql_constrains = [('todo_task_name_unique','UNIQUE(name, user_id, active)',
                         'Ya existe una tarea con el mismo nombre')]
 
+
     effort_estimate = fields.Integer()
     name = fields.Char(help=u'¿Qué es lo que se tiene que hacer?')
 
@@ -42,6 +43,15 @@ class TodoTask(models.Model):
 
     #Se indica que queremos los dos modelos en la referencia
     refers_to = fields.Reference([('res.user', 'User'), ('res.partner', 'Partner')], 'Referncia')
+
+    # Constrain basado en python
+    @api.multi
+    @api.constrains('name')
+    def check_name_size(self):
+        for task in self:
+            if len(task.name) > 50 or len(task.name) < 5:
+                raise ValidationError('Minimo 5 y maximo 50 caracteres')
+
 
     @api.model #cuando se utiliza la api model no recibe un recordset
     def creat(self,vals):

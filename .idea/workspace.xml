@@ -58,7 +58,7 @@
             <entry file="file://$PROJECT_DIR$/todo_stage/models/todo_task_model.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="165">
-                  <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+                  <caret line="52" column="72" lean-forward="true" selection-start-line="52" selection-start-column="72" selection-end-line="52" selection-end-column="72" />
                   <folding />
                 </state>
               </provider>
@@ -614,7 +614,7 @@
     <entry file="file://$PROJECT_DIR$/todo_stage/models/todo_task_model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+          <caret line="52" column="72" lean-forward="true" selection-start-line="52" selection-start-column="72" selection-end-line="52" selection-end-column="72" />
           <folding />
         </state>
       </provider>
