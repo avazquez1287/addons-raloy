@@ -8,6 +8,12 @@ class TodoTask(models.Model):
     _name = 'todo.task'
     _inherit = ['todo.task', 'mail.thread']
 
+    #constrain basado en sql para validar que no se repirtan los
+    #Estructura
+    #  _sql_constrains = [('nombre','funcion de posgres', 'Mensaje')]
+    _sql_constrains = [('todo_task_name_unique','UNIQUE(name, user_id, active)',
+                        'Ya existe una tarea con el mismo nombre')]
+
     effort_estimate = fields.Integer()
     name = fields.Char(help=u'¿Qué es lo que se tiene que hacer?')
 
@@ -37,14 +43,14 @@ class TodoTask(models.Model):
     #Se indica que queremos los dos modelos en la referencia
     refers_to = fields.Reference([('res.user', 'User'), ('res.partner', 'Partner')], 'Referncia')
 
-    @api.model
+    @api.model #cuando se utiliza la api model no recibe un recordset
     def creat(self,vals):
         values.update({'effort_estimate':5})
-        new_record = super(TodoTask, self).creat(values) #Para modulos en odoo 10
+        new_record = super(TodoTask, self).creat(values) #Para modulos en odoo 10 se usa esta sentencia
         return new_record
 
 
-    @api.multi
+    @api.multi#la api multi se utliza para borrar o modificar un registro existente
     @api.onchange('user_id')#lanzar un evento cada vez que cambie l user_id
     def onchange_user_id(self):
         if not self.user_id:
