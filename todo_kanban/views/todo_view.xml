@@ -2,7 +2,7 @@
 <odoo>
     <!-- Modificar accion del menu para agregar vista de Kanban-->
     <record id="todo_app.action_todo_task" model="ir.actions.act_window">
-        <field name="view_mode">kanban,tree,form,calendar,graph,pivot</field>
+        <field name="view_mode">tree,form,kanban,calendar,graph,pivot</field>
     </record>
 
     <!-- Vista Kanban -->
