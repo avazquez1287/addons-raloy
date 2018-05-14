@@ -27,7 +27,7 @@
                         <!-- HTML QWeb -->
                         <div t-attf-class="oe_kanban_color_#{kanban_getcolor(record.color.raw_value)} oe_kanban_global_click">
                             <!-- Menu superior derecho -->
-                            <div class="o_dropdown_kanban dropdown">
+                            <div class="oe_dropdown_kanban dropdown">
 
                             </div>
                             <div class="oe_kanban_body">
