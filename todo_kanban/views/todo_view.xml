@@ -11,7 +11,7 @@
         <field name="name">Vista de Kanban para Tareas</field>
         <field name="model">todo.task</field>
         <field name="arch" type="xml">
-            <kanban>
+            <kanban defaul_group_by="stage_id" class="o_kanban_small_column">
                 <!-- Campos a utilizar en Kanban -->
                 <field name="stage_id"/>
                 <field name="color"/>
@@ -19,7 +19,7 @@
                 <field name="priority"/>
                 <field name="is_done"/>
                 <field name="message_partner_ids"/>
-                <progressbar field="kanban_state" color="{'done': 'success', 'blocked': 'danger'}" />
+                <!--<progressbar field="kanban_state" colors="{'done': 'success', 'blocked': 'danger'}" /> -->
 
                 <!-- Plantilla QWeb -->
                 <templates>
