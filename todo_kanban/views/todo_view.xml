@@ -29,12 +29,18 @@
                         <div t-attf-class="oe_kanban_color_#{kanban_getcolor(record.color.raw_value)} oe_kanban_global_click">
                             <!-- Menu superior derecho -->
                             <div class="o_dropdown_kanban dropdown">
-                                <a class="dropdown-toggle btn" data-toggle="drowpdown" hrf="#">
-                                    <span class="fa fa-ellipsis-v" aria-hidden="true"/>
-                                </a>
-                                <ul class="dropdown.menu" role="menu" aria-labelledby="dlabel">
-                                    <li class="divider"/>
-                                    <li class="dropdown-header">Color</li>
+                               <div class="dropdown-toggle btn" data-toggle="dropdown" href="#">
+                                    <span class="fa fa-ellipsis-v" aria-hidden="true" />
+                                </div>
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                    <t t-if="widget.editable">
+                                        <li><a type="edit">Editar</a></li>
+                                    </t>
+                                    <t t-if="!record.is_done.value">
+                                        <li><a name="do_toogle_done" type="object">Marcar Terminado</a></li>
+                                    </t>
+                                        <li class="divider"/>
+                                        <li class="dropdown-header">Color</li>
                                     <li>
                                         <ul class="oe_kanban_colorpicker" data-field="color"/>
                                     </li>
@@ -83,7 +89,7 @@
 
     <!-- Vista formulario -->
     <record id="todo_form_todo_task_inh" model="ir.ui.view">
-            <field name="name">Vista 2 para Tareas</field>
+        <field name="name">Vista 2 para Tareas</field>
             <field name="model">todo.task</field>
             <field name="inherit_id" ref="todo_stage.view_form_todo_task"></field>
             <field name="arch" type="xml">
