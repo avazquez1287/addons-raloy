@@ -10,6 +10,7 @@
     'data': [
         'views/todo_view.xml',
         'views/todo_menu.xml',
-        'wizard/todo_task_wizard_wiew.xml'
+        'wizard/todo_task_wizard_wiew.xml',
+        'security/ir.model.access.csv'
     ]
 }

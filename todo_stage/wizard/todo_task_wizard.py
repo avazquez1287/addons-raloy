@@ -27,6 +27,18 @@ class TodoTaskWizard(models.TransientModel):
             'target': 'new'
         }
 
+    @api.multi
+    def do_reopen_wizard(self):
+        self.ensure_one()  # Asegurar que se trate de un singleton
+        return {
+            'type': 'ir.actions.act_window',
+            # 'res_model': 'todo.task.wizard',
+            'res_model': self._name,  # Nombre del modelo
+            'res_id': self.id,  # Identifcador actual del registro del wizard
+            'view_mode': 'form',
+            'view_type': 'form',
+            'target': 'new'
+        }
 
     @api.multi
     def do_load_tasks(self):

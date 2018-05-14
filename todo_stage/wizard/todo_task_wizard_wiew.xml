@@ -1,45 +1,47 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <odoo>
+
+    <!-- Vista del Wizard -->
     <record id="todo_task_wizard_form" model="ir.ui.view">
         <field name="name">Vista Wizard de Tareas</field>
         <field name="model">todo.task.wizard</field>
         <field name="arch" type="xml">
-                <form>
-                    <div class="oe_right">
-                        <button type="object" name="do_count_tasks" string="Contar"/>
-                        <button type="object" name="do_loads_tasks" string="Cargar Todas"/>
-                    </div>
-                    <field name="task_ids">
-                        <tree>
-                            <field name="name"/>
-                            <field name="user_id"/>
-                            <field name="date_deadline"/>
-                        </tree>
-                    </field>
+            <form>
+                <div class="oe_right">
+                    <button type="object" name="do_count_tasks" string="Contar"/>
+                    <button type="object" name="do_load_tasks" string="Cargar Todas"/>
+                </div>
+                <field name="task_ids">
+                    <tree>
+                        <field name="name"/>
+                        <field name="user_id"/>
+                        <field name="date_deadline"/>
+                    </tree>
+                </field>
+                <group>
                     <group>
-                        <group>
-                            <field name="new_user_id"/>
-                        </group>
-                        <group>
-                            <field name="new_deadline"/>
-                        </group>
+                        <field name="new_user_id"/>
                     </group>
+                    <group>
+                        <field name="new_deadline"/>
+                    </group>
+                </group>
 
-                    <footer>
-                        <button type="object" name="do_mass_update" string="Actualizar" class="oe_hightlight"/>
-                        <button special="cancel" string="Cancelar"/>
-                    </footer>
-
-                </form>
+                <footer>
+                    <button type="object" name="do_mass_update" string="Actualizar" class="oe_hightlight"/>
+                    <button special="cancel" string="Cancelar"/>
+                </footer>
+            </form>
         </field>
     </record>
 
-    <!--Action Menu en Mas -->
+    <!-- Action Menu en Mas  -->
     <act_window id="action_todo_wizard"
                 name="Wizard Tareas"
                 src_model="todo.task"
                 res_model="todo.task.wizard"
-                view_model="form"
+                view_mode="form"
                 target="new"
-                multi="True"/>
+                multi="False" />
+
 </odoo>

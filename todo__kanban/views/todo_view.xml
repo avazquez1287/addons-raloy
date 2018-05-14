@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Modificar accion del menu para agregar vista de Kanban-->
+    <record id="todo_app.action_todo_task" model="ir.actions.act_window">
+        <field name="view_mode">kanban,tree,form,calendar,graph,pivot</field>
+    </record>
+
+    <!-- Vista Kanban -->
+
+    <record id="todo_task_kanban" model="ir.ui.view">
+        <field name="name">Vista de Kanban para Tareas</field>
+        <field name="model">todo.task</field>
+        <field name="arch" type="xml">
+            <kanban>
+                <!-- Campos a utilizar en Kanban -->
+                <field name="stage_id"/>
+                <field name="color"/>
+                <field name="kanban_state"/>
+                <field name="priority"/>
+                <field name="is_done"/>
+                <field name="message_partner_ids"/>
+                <progessbar field="kanban_state" color="{'done': 'success', 'blocked': 'danger'}" />
+
+                <!-- Plantilla QWeb -->
+                <templates>
+                    <t t-name="kanban-box">
+                        <!-- HTML QWeb -->
+                        <div t-attf-class="oe_kanban_color_#{kanban_getcolor(record.color.raw_value)} oe_kanban_global_click">
+                            <!-- Menu superior derecho -->
+                            <div class="o_dropdown_kanban dropdown">
+
+                            </div>
+                            <div class="oe_kanban_body">
+                                <div>
+                                    <field name="tag_ids" />
+                                </div>
+                                <div>
+                                    <strong>
+                                        <a type="open"><field name="name"/></a>
+                                    </strong>
+                                </div>
+
+                            </div>
+
+                            <div class="oe_kanban_footer">
+                                <div class="oe_kanban_footer_left">
+
+                                </div>
+                                <div class="oe_kanban_footer_right">
+
+                                </div>
+                            </div>
+                            <div class="oe_clear"/>
+
+                        </div>
+                    </t>
+                </templates>
+
+
+            </kanban>
+
+        </field>
+
+    </record>
+
+</odoo>
