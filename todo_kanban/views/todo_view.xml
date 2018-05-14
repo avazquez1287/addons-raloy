@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-<recod>
+<record>
     <!-- Modificar accion del menu para agregar vista de Kanban-->
     <record id="todo_app.action_todo_task" model="ir.actions.act_window">
         <field name="view_mode">tree,form,kanban,calendar,graph,pivot</field>
@@ -97,5 +97,5 @@
                     <field name="priority" widget="priority"/>
                 </field>
             </field>
-     </recod>
+     </record>
 </odoo>
