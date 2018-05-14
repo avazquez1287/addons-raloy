@@ -53,8 +53,8 @@
       <file leaf-file-name="todo_view.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/todo_kanban/views/todo_view.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="76" lean-forward="false" selection-start-line="13" selection-start-column="76" selection-end-line="13" selection-end-column="76" />
+            <state relative-caret-position="315">
+              <caret line="21" column="102" lean-forward="false" selection-start-line="21" selection-start-column="102" selection-end-line="21" selection-end-column="102" />
               <folding />
             </state>
           </provider>
@@ -874,8 +874,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/todo_kanban/views/todo_view.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="76" lean-forward="false" selection-start-line="13" selection-start-column="76" selection-end-line="13" selection-end-column="76" />
+        <state relative-caret-position="315">
+          <caret line="21" column="102" lean-forward="false" selection-start-line="21" selection-start-column="102" selection-end-line="21" selection-end-column="102" />
           <folding />
         </state>
       </provider>
