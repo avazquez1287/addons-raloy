@@ -19,7 +19,7 @@
                 <field name="priority"/>
                 <field name="is_done"/>
                 <field name="message_partner_ids"/>
-                <progessbar field="kanban_state" color="{'done': 'success', 'blocked': 'danger'}" />
+                <progressbar field="kanban_state" color="{'done': 'success', 'blocked': 'danger'}" />
 
                 <!-- Plantilla QWeb -->
                 <templates>
