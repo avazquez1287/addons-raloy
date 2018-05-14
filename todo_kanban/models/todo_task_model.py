@@ -5,7 +5,7 @@ from odoo.exceptions import ValidationError
 
 
 class TodoTask(models.Model):
-    _name = 'todo.task'
+   # _name = 'todo.task'
     _inherit = 'todo.task'
 
     color = fields.Integer('Color')
