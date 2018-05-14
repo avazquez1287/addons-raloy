@@ -54,7 +54,7 @@
         <entry file="file://$PROJECT_DIR$/todo_kanban/views/todo_view.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
-              <caret line="21" column="102" lean-forward="false" selection-start-line="21" selection-start-column="102" selection-end-line="21" selection-end-column="102" />
+              <caret line="21" column="97" lean-forward="false" selection-start-line="21" selection-start-column="97" selection-end-line="21" selection-end-column="97" />
               <folding />
             </state>
           </provider>
@@ -875,7 +875,7 @@
     <entry file="file://$PROJECT_DIR$/todo_kanban/views/todo_view.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="21" column="102" lean-forward="false" selection-start-line="21" selection-start-column="102" selection-end-line="21" selection-end-column="102" />
+          <caret line="21" column="97" lean-forward="false" selection-start-line="21" selection-start-column="97" selection-end-line="21" selection-end-column="97" />
           <folding />
         </state>
       </provider>
