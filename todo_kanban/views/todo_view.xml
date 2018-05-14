@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+<recod>
     <!-- Modificar accion del menu para agregar vista de Kanban-->
     <record id="todo_app.action_todo_task" model="ir.actions.act_window">
         <field name="view_mode">tree,form,kanban,calendar,graph,pivot</field>
@@ -28,7 +29,16 @@
                         <div t-attf-class="oe_kanban_color_#{kanban_getcolor(record.color.raw_value)} oe_kanban_global_click">
                             <!-- Menu superior derecho -->
                             <div class="o_dropdown_kanban dropdown">
-
+                                <a class="dropdown-toggle btn" data-toggle="drowpdown" hrf="#">
+                                    <span class="fa fa-ellipsis-v" aria-hidden="true"/>
+                                </a>
+                                <ul class="dropdown.menu" role="menu" aria-labelledby="dlabel">
+                                    <li class="divider"/>
+                                    <li class="dropdown-header">Color</li>
+                                    <li>
+                                        <ul class="oe_kanban_colorpicker" data-field="color"/>
+                                    </li>
+                                </ul>
                             </div>
                             <div class="oe_kanban_body">
                                 <div>
@@ -72,7 +82,7 @@
     </record>
 
     <!-- Vista formulario -->
-    <record id="todo_form_todo_task_inh" model="ir.ui.view"
+    <record id="todo_form_todo_task_inh" model="ir.ui.view">
             <field name="name">Vista 2 para Tareas</field>
             <field name="model">todo.task</field>
             <field name="inherit_id" ref="todo_stage.view_form_todo_task"></field>
@@ -81,4 +91,5 @@
                     <field name="priority" widget="priority"/>
                 </field>
             </field>
+     </recod>
 </odoo>
