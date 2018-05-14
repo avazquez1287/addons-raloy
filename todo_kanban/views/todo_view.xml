@@ -19,7 +19,7 @@
                 <field name="priority"/>
                 <field name="is_done"/>
                 <field name="message_partner_ids"/>
-                <progressbar field="kanban_state" colors='{"done": "success", "blocked": "danger"}'/>
+                <!-- <progressbar field="kanban_state" colors='{"done": "success", "blocked": "danger"}'/> -->
 
                 <!-- Plantilla QWeb -->
                 <templates>
@@ -39,15 +39,23 @@
                                         <a type="open"><field name="name"/></a>
                                     </strong>
                                 </div>
+                                <ul>
+                                    <li><field name="user_id"/></li>
+                                    <li><field name="date_deadline"/></li>
+                                </ul>
 
                             </div>
 
                             <div class="oe_kanban_footer">
                                 <div class="oe_kanban_footer_left">
-
+                                    <field name="priority" widget="priority"></field>
                                 </div>
                                 <div class="oe_kanban_footer_right">
-
+                                    <field name="kanban_state" widget="kanban_state_selection"/>
+                                    <img t-att-src="kanban_image('res.users','image_small', record.user_id.raw_value)"
+                                         t-att-title="record.user_id.value"
+                                         widht="24" height="24"
+                                         class="oe_kanban_avatar"/>
                                 </div>
                             </div>
                             <div class="oe_clear"/>
@@ -63,4 +71,14 @@
 
     </record>
 
+    <!-- Vista formulario -->
+    <record id="todo_form_todo_task_inh" model="ir.ui.view"
+            <field name="name">Vista 2 para Tareas</field>
+            <field name="model">todo.task</field>
+            <field name="inherit_id" ref="todo_stage.view_form_todo_task"></field>
+            <field name="arch" type="xml">
+                <field name="date_deadline" position="after">
+                    <field name="priority" widget="priority"/>
+                </field>
+            </field>
 </odoo>
